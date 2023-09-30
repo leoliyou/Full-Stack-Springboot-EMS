@@ -9,7 +9,7 @@ const ListEmployeeComponent = () => {
 
   useEffect(() => {
     getAllEmployees();
-}, []);
+  }, []);
 
   function getAllEmployees() {
     listEmployees()
@@ -29,6 +29,8 @@ const ListEmployeeComponent = () => {
   }
 
   function removeEmployee(id) {
+    console.log(id);
+
     deleteEmployee(id)
       .then((response) => {
         getAllEmployees();
