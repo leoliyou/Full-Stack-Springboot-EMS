@@ -9,7 +9,7 @@ const ListEmployeeComponent = () => {
 
   useEffect(() => {
     getAllEmployees();
-  }, []);
+}, []);
 
   function getAllEmployees() {
     listEmployees()
